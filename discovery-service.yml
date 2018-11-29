@@ -3,7 +3,7 @@ server:
   
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${springboot.app.name:discovery-servicey}
   client:
     register-with-eureka: false
     fetch-registry: false
